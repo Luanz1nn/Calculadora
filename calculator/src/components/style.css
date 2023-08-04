@@ -1,0 +1,153 @@
+body {
+  display: flex;
+  margin-top: 4%;
+  justify-content: center;
+}
+
+.container-light {
+  background-color: #f1f2f3;
+  width: 300px;
+  height: 500px;
+  padding: 10px 10px;
+}
+
+.container-light .mode button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f1f2f3;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container-light .mode button:hover {
+  background-color: rgba(204, 202, 202, 0.486);
+}
+
+.container-light .mode img {
+  width: 30px;
+  height: 30px;
+}
+
+.container-light .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.container-light .buttons button {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 30%;
+  border: none;
+}
+
+.container-light .buttons button div {
+  font-family: sans-serif;
+  font-size: 22px;
+  background-color: none;
+}
+
+.container-light .buttons .btn {
+  background-color: #fff;
+}
+
+.container-light .buttons .btn:hover {
+  background-color: #e2e2e2;
+}
+
+.container-light .buttons .btn-top {
+  background-color: #d2d3da;
+}
+
+.container-light .buttons .btn-top:hover {
+  background-color: #bbbbbb;
+}
+
+.container-light .buttons .btn-right {
+  background-color: #4b5efc;
+  color: #fff;
+}
+
+.container-light .buttons .btn-right:hover {
+  background-color: #414fce;
+}
+
+/*Dark mode*/
+
+.container-dark {
+  background-color: #17171c;
+  width: 300px;
+  height: 500px;
+  padding: 10px 10px;
+}
+
+.container-dark .mode button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #17171c;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container-dark .mode button:hover {
+  background-color: #32323a;
+}
+
+.container-dark .mode img {
+  width: 30px;
+  height: 30px;
+}
+
+.container-dark .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.container-dark .buttons button {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 30%;
+  border: none;
+}
+
+.container-dark .buttons button div {
+  font-family: sans-serif;
+  font-size: 22px;
+  background-color: none;
+}
+
+.container-dark .buttons .btn {
+  background-color: #fff;
+}
+
+.container-dark .buttons .btn:hover {
+  background-color: #e2e2e2;
+}
+
+.container-dark .buttons .btn-top {
+  background-color: #d2d3da;
+}
+
+.container-dark .buttons .btn-top:hover {
+  background-color: #bbbbbb;
+}
+
+.container-dark .buttons .btn-right {
+  background-color: #4b5efc;
+  color: #fff;
+}
+
+.container-dark .buttons .btn-right:hover {
+  background-color: #414fce;
+}
