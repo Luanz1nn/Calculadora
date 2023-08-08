@@ -4,10 +4,23 @@ import sun from "../assets/sol.png";
 import moon from "../assets/lua-crescente (1).png";
 
 function Calculator() {
-  const [mode, setMode] = useState('light')
+  const [mode, setMode] = useState('light');
+  const [numbe, setNumbe] = useState('0');
 
   function HandleChangeMode() {
     setMode(nextMode => nextMode === 'light' ? 'dark' : 'light')
+  }
+
+  function HandleNumbeButton(e){
+    let inputValue = e.target.value;
+    if(inputValue === undefined){
+      return
+    }
+    if(numbe === '0'){
+      setNumbe(inputValue)
+    }else{
+      setNumbe(numbe + inputValue);
+    }    
   }
 
   return (
@@ -18,8 +31,9 @@ function Calculator() {
         :
         <img src={moon} alt='moon'/>
         }
-          
-          </button>
+        </button>        
+          <h3>{numbe}</h3>
+          <h1>{numbe}</h1>      
         <div className="buttons">
           <button className="btn-gray">
             <div>C</div>
@@ -33,46 +47,46 @@ function Calculator() {
           <button className="btn-blue">
             <div>÷</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={7}>
             <div>7</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={8}>
             <div>8</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={9}>
             <div>9</div>
           </button>
           <button className="btn-blue">
             <div>x</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={4}>
             <div>4</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={5}>
             <div>5</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={6}>
             <div>6</div>
           </button>
-          <button className="btn-blue">
+          <button className="btn-blue" onClick={HandleNumbeButton} value={7}>
             <div>-</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={1}>
             <div>1</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={2}>
             <div>2</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={3}>
             <div>3</div>
           </button>
           <button className="btn-blue">
             <div>+</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={'.'}>
             <div>.</div>
           </button>
-          <button className="btn">
+          <button className="btn" onClick={HandleNumbeButton} value={0}>
             <div>0</div>
           </button>
           <button className="btn">

@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
+
 body {
   display: flex;
   margin-top: 4%;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  gap: 5px;
   width: 300px;
   height: 500px;
   padding: 10px 10px;
 }
 
-.container .mode{
+.container .mode {
   width: 50px;
   height: 50px;
   border: none;
@@ -25,6 +28,26 @@ body {
   width: 30px;
   height: 30px;
 }
+
+.container h1,
+h3 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 25px 0px 25px;
+}
+
+.container h1{
+  font-family: "Work Sans";
+  font-weight: 300;
+  font-size: 60px;
+}
+
+.container h3{
+  font-family: "Work Sans";  
+  font-weight: 300;
+  font-size: 30px;
+}
+
 .container .buttons button {
   display: flex;
   justify-content: center;
@@ -35,8 +58,6 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-
-
 
 .container .buttons {
   display: flex;
@@ -53,69 +74,80 @@ body {
 }
 
 .container .buttons button div {
-  font-family: sans-serif;
+  font-family: "Work Sans"; 
+  font-weight: 400;
   font-size: 22px;
-
 }
 
-#light{
-  background-color: #f1f2f3;  
+#light {
+  background-color: #f1f2f3;
+}
+
+#light h3 {
+  color: #919192;
 }
 
 #light button {
   background-color: #fff;
   color: #000;
-  }
+}
 
-#light button:hover{
+#light button:hover {
   background-color: #e9e9e9;
 }
 
-#light .btn-gray{
-  background-color: #D2D3DA;
+#light .btn-gray {
+  background-color: #d2d3da;
   color: #000;
-  }
+}
 
-  #light .btn-gray:hover{
-    background-color: rgb(194, 194, 194);
-  }
-  
+#light .btn-gray:hover {
+  background-color: rgb(194, 194, 194);
+}
 
-  #light .btn-blue{
-    background-color: #4B5EFC;
-    color: #fff;
-    }
+#light .btn-blue {
+  background-color: #4b5efc;
+  color: #fff;
+}
 
-    #light .btn-blue:hover{
-      background-color: #4050da;
-      }
+#light .btn-blue:hover {
+  background-color: #4050da;
+}
 
-#dark{
-background-color: #17171C;
+#dark {
+  background-color: #17171c;
+}
+
+#dark h1 {
+  color: #fff;
+}
+
+#dark h3 {
+  color: #747477;
 }
 
 #dark button {
-  background-color: #2E2F38;
+  background-color: #2e2f38;
   color: #fff;
-  }
+}
 
-  #dark button:hover{
-    background-color: #222229;
-    }
+#dark button:hover {
+  background-color: #222229;
+}
 
-#dark .btn-gray{
-  background-color: #4E505F;
+#dark .btn-gray {
+  background-color: #4e505f;
   color: #fff;
-  }
+}
 
-  #dark .btn-gray:hover{
-    background-color: #3f404d;
-    }
+#dark .btn-gray:hover {
+  background-color: #3f404d;
+}
 
-  #dark .btn-blue{
-    background-color: #4B5EFC;
-    color: #fff;
-    }
-  #dark .btn-blue:hover{
-      background-color: #4554df;
-      }
+#dark .btn-blue {
+  background-color: #4b5efc;
+  color: #fff;
+}
+#dark .btn-blue:hover {
+  background-color: #4554df;
+}
